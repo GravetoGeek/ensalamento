@@ -1,6 +1,6 @@
 <template>
     <div class="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg  fixed-top navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
     <span class="navbar-toggler-icon"></span>
@@ -37,3 +37,9 @@
 </nav>
     </div>
 </template>
+
+<script>
+export default {
+  name: 'NavBar',
+}
+</script>

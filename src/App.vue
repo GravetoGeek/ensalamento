@@ -1,8 +1,9 @@
 <template>
   <div id="app">
+    <NavBar/>
     <div id="nav">
       <router-link to="/">Início</router-link> |
-      <router-link to="/sobreS">Sobre</router-link>
+      <router-link to="/sobre">Sobre</router-link>
     </div>
     <router-view/>
   </div>
@@ -32,8 +33,15 @@
   color: #42b983;
 }
 </style>
+
 <script>
+// @ is an alias to /src
+import NavBar from '@/components/NavBar.vue'
+
 export default {
-  
+  name: 'Inicio',
+  components: {
+    NavBar
+  }
 }
 </script>
